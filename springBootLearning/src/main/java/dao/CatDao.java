@@ -7,7 +7,7 @@ import model.Cat;
 
 public interface CatDao {
 
-	void insertNewCat(UUID catId, Cat cat);
+	int insertNewCat(UUID catId, Cat cat);
 
 	Cat selectCatById(UUID catId);
 
