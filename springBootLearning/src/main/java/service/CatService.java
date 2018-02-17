@@ -3,6 +3,9 @@ package service;
 import java.util.List;
 import java.util.UUID;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+
 import dao.CatDao;
 import model.Cat;
 
@@ -10,7 +13,8 @@ public class CatService {
 
 	private final CatDao catDao;
 
-	public CatService(CatDao catDao) {
+	@Autowired
+	public CatService(@Qualifier("dummyCatDao") CatDao catDao) {
 		this.catDao = catDao;
 	}
 

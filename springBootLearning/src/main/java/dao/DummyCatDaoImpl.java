@@ -6,8 +6,11 @@ import java.util.List;
 import java.util.Map;
 import java.util.UUID;
 
+import org.springframework.stereotype.Repository;
+
 import model.Cat;
 
+@Repository("dummyCatDao")
 public class DummyCatDaoImpl implements CatDao {
 
 	private final Map<UUID, Cat> dummyDatabase;
