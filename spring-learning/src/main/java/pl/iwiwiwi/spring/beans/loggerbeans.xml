@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd">
+
+
+	<!-- <bean id="consoleWriter" class="pl.iwiwiwi.spring.logger.ConsoleWriter"> 
+		</bean> <bean id="panda" class="pl.iwiwiwi.spring.logger.ConsoleWriter"> 
+		</bean> <bean id="fileWriter" class="pl.iwiwiwi.spring.logger.FileWriter"></bean> 
+		<bean id="logger" class="pl.iwiwiwi.spring.logger.Logger"> </bean> -->
+	<context:annotation-config></context:annotation-config>
+	<context:component-scan base-package="pl.iwiwiwi.spring.logger"></context:component-scan>
+</beans>

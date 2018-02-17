@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beansProjectDescription>
+	<version>1</version>
+	<pluginVersion><![CDATA[3.8.0.201606301005-RELEASE]]></pluginVersion>
+	<configSuffixes>
+		<configSuffix><![CDATA[xml]]></configSuffix>
+	</configSuffixes>
+	<enableImports><![CDATA[false]]></enableImports>
+	<configs>
+		<config>src/main/java/pl/iwiwiwi/spring/beans/beans.xml</config>
+		<config>src/main/java/pl/iwiwiwi/spring/beans/fruitsbeans.xml</config>
+		<config>src/main/java/pl/iwiwiwi/spring/beans/junglebeans.xml</config>
+		<config>src/main/java/pl/iwiwiwi/spring/beans/loggerbeans.xml</config>
+		<config>src/main/java/pl/iwiwiwi/spring/beans/robotbeans.xml</config>
+		<config>src/main/java/pl/iwiwiwi/spring/beans/propsbeans.xml</config>
+	</configs>
+	<autoconfigs>
+	</autoconfigs>
+	<configSets>
+	</configSets>
+</beansProjectDescription>

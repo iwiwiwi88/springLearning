@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+	<bean id="jungle" class="pl.iwiwiwi.spring.animals.Jungle">
+	<property name="foods">
+		<props>
+			<prop key="monkey">banana</prop>
+			<prop key="panda">bamboo</prop>
+		</props>
+	</property>
+	<property name="animals">
+		<map>
+			<entry value-ref="lion" key="lion"></entry>
+			<entry value-ref="monkey" key="monkey"></entry>
+			<entry value-ref="snake" key="snake"></entry>
+		</map>
+	</property>
+	</bean>
+	<bean id="lion" class="pl.iwiwiwi.spring.animals.Animal">
+		<property name="name" value="Kiciuś"></property>
+		<property name="type" value="lew"></property>
+	</bean>
+	<bean id="snake" class="pl.iwiwiwi.spring.animals.Animal">
+		<property name="name" value="Sykacz"></property>
+		<property name="type" value="wąż"></property>
+	</bean>
+	<bean id="monkey" class="pl.iwiwiwi.spring.animals.Animal">
+		<property name="name" value="Małpiszon"></property>
+		<property name="type" value="małpa"></property>
+	</bean>
+</beans>

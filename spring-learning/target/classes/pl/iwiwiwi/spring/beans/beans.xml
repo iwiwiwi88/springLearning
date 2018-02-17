@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	default-init-method="init" default-destroy-method="destroy"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+	<bean id="person1" class="pl.iwiwiwi.spring.test.Person" scope="singleton"
+		init-method="onCreate" destroy-method="onDestroy" factory-method="getInstance">
+		<constructor-arg value="Iwona" name="name" type="String"></constructor-arg>
+		<constructor-arg value="10" name="id" type="int"></constructor-arg>
+		<property name="taxId" value="5555"></property>
+		<property name="address" ref="address1"></property>
+	</bean>
+	<bean id="person2" class="pl.iwiwiwi.spring.test.Person"
+		scope="singleton" init-method="onCreate" destroy-method="onDestroy"
+		factory-method="createPerson" factory-bean="personfactory">
+		<constructor-arg value="Paweł" name="name" type="String"></constructor-arg>
+		<constructor-arg value="86" name="id" type="int"></constructor-arg>
+		<property name="taxId" value="222"></property>
+		<property name="address" ref="address2"></property>
+	</bean>
+	<bean id="address1" class="pl.iwiwiwi.spring.test.Address">
+		<constructor-arg name="street" value="Twardowskiego"></constructor-arg>
+		<constructor-arg name="postcode" value="30-312"></constructor-arg>
+	</bean>
+	<bean id="address2" class="pl.iwiwiwi.spring.test.Address" p:street="Czyściec" p:postcode="87655">
+	</bean>
+	<bean id="personfactory"
+		class="pl.iwiwiwi.spring.test.PersonFactory">
+	</bean>
+</beans>
