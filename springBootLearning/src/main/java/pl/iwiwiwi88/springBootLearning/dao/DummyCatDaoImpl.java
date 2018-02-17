@@ -1,4 +1,4 @@
-package dao;
+package pl.iwiwiwi88.springBootLearning.dao;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -8,7 +8,7 @@ import java.util.UUID;
 
 import org.springframework.stereotype.Repository;
 
-import model.Cat;
+import pl.iwiwiwi88.springBootLearning.model.Cat;
 
 @Repository("dummyCatDao")
 public class DummyCatDaoImpl implements CatDao {

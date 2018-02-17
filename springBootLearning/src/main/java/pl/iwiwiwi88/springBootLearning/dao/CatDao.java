@@ -1,9 +1,9 @@
-package dao;
+package pl.iwiwiwi88.springBootLearning.dao;
 
 import java.util.List;
 import java.util.UUID;
 
-import model.Cat;
+import pl.iwiwiwi88.springBootLearning.model.Cat;
 
 public interface CatDao {
 

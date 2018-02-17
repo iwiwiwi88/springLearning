@@ -1,4 +1,4 @@
-package model;
+package pl.iwiwiwi88.springBootLearning.model;
 
 import java.util.UUID;
 

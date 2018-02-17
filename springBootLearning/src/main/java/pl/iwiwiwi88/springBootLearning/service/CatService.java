@@ -1,14 +1,16 @@
-package service;
+package pl.iwiwiwi88.springBootLearning.service;
 
 import java.util.List;
 import java.util.UUID;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Service;
 
-import dao.CatDao;
-import model.Cat;
+import pl.iwiwiwi88.springBootLearning.dao.CatDao;
+import pl.iwiwiwi88.springBootLearning.model.Cat;
 
+@Service
 public class CatService {
 
 	private final CatDao catDao;
