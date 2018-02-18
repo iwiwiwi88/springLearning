@@ -22,6 +22,7 @@ public class CatService {
 
 	public int persistNewCat(UUID catId, Cat cat) {
 		UUID catUid = catId == null ? UUID.randomUUID() : catId;
+		cat.setId(catUid);
 		return catDao.insertNewCat(catUid, cat);
 	}
 
